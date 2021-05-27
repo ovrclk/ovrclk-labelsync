@@ -8,7 +8,14 @@ colors:
   scope: &scope "#27CF79"
   team: &team'#FDF4E8'
   release: &release "#A5D8ff"
-  process: &process' "#EB9100"
+  process: &process "#EB9100"
+  phase: &phase "#D71698"
+  design: &design "#5319E7"
+  testing: &testing "#f7bfff"
+  ready: &ready "#6eefcb"
+  draft: &draft "#6DF635"
+  review: &review "#d876e3"
+  wontfix: &wontfix "#ffffff"
 
 # Labels
 labels: &common
@@ -61,17 +68,37 @@ labels: &common
 
 # Repositories
 repos:
-  emma-cli:
+  akash:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  label-sync:
+  net:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  graphql-shield:
+  awesome-akash:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  docs:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  engineering:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  operations:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  akash-on-akash:
     config:
       removeUnconfiguredLabels: false
     labels:
