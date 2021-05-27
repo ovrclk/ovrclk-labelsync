@@ -49,6 +49,15 @@ labels: &common
     color: &kind
     description: Developer asked a question. No code changes required.
     alias: ["question"]
+  "scope/large":
+    color: &scope
+    description: Engineering effort >2 person weeks
+  "scope/medium":
+    color: &scope
+    description: Engineering effort ~2 person weeks
+  "scope/small":
+    color: &scope
+    description: Engineering effort <=1 person week
 
 # Repositories
 repos:
