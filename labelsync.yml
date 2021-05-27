@@ -56,14 +56,14 @@ repos:
     config:
       removeUnconfiguredLabels: false
     labels:
-			<<: *common
+      <<: *common
   label-sync:
     config:
       removeUnconfiguredLabels: false
     labels:
-			<<: *common
+      <<: *common
   graphql-shield:
     config:
       removeUnconfiguredLabels: false
     labels:
-			<<: *common
+      <<: *common
