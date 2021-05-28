@@ -68,37 +68,7 @@ labels: &common
 
 # Repositories
 repos:
-  akash:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  net:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  awesome-akash:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  docs:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
   engineering:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  operations:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  akash-on-akash:
     config:
       removeUnconfiguredLabels: false
     labels:
