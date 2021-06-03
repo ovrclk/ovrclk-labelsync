@@ -6,7 +6,7 @@ colors:
   bug: &bug "#EE0000"
   priority: &priority "#F783AC"
   scope: &scope "#27CF79"
-  team: &team'#FDF4E8'
+  team: &team "#FDF4E8"
   release: &release "#A5D8ff"
   process: &process "#EB9100"
   phase: &phase "#D71698"
