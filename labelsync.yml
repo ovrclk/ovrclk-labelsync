@@ -1,75 +1,130 @@
-# Colors
-colors:
-  area: &area "#FFD700"
-  kind: &kind "#3B5BDB"
-  status: &status "#F8F9FA"
-  bug: &bug "#EE0000"
-  priority: &priority "#F783AC"
-  scope: &scope "#27CF79"
-  team: &team "#FDF4E8"
-  release: &release "#A5D8ff"
-  process: &process "#EB9100"
-  phase: &phase "#D71698"
-  design: &design "#5319E7"
-  testing: &testing "#f7bfff"
-  ready: &ready "#6eefcb"
-  draft: &draft "#6DF635"
-  review: &review "#d876e3"
-  wontfix: &wontfix "#ffffff"
-
-# Labels
-labels: &common
-  "bug/0-needs-info":
-    color: &bug
-    description: More information is needed for reproduction.
-    siblings: ["kind/bug"]
-  "bug/1-repro-available":
-    color: &bug
-    description: A reproduction exists and needs to be confirmed.
-    siblings: ["kind/bug"]
-  "bug/2-confirmed":
-    color: &bug
-    description: We have confirmed that this is a bug.
-    siblings: ["kind/bug"]
-  "kind/bug":
-    color: &bug
-    description: A reported bug.
-    alias: ["bug"]
-  "kind/regression":
-    color: &kind
-    description: A reported bug in functionality that used to work before.
-  "kind/feature":
-    color: &kind
-    description: A request for a new feature.
-    alias: ["enhancement"]
-  "kind/improvement":
-    color: &kind
-    description: An improvement to existing feature and code.
-  "kind/docs":
-    color: &kind
-    description: A documentation change is required.
-    alias: ["documentation"]
-  "kind/discussion":
-    color: &kind
-    description: Discussion is required.
-  "kind/question":
-    color: &kind
-    description: Developer asked a question. No code changes required.
-    alias: ["question"]
-  "scope/large":
-    color: &scope
-    description: Engineering effort >2 person weeks
-  "scope/medium":
-    color: &scope
-    description: Engineering effort ~2 person weeks
-  "scope/small":
-    color: &scope
-    description: Engineering effort <=1 person week
-
-# Repositories
-repos:
-  engineering:
-    config:
+--- 
+colors: 
+  area: "#FFD700"
+  bug: "#EE0000"
+  design: "#5319E7"
+  draft: "#6DF635"
+  kind: "#3B5BDB"
+  phase: "#D71698"
+  priority: "#F783AC"
+  process: "#EB9100"
+  ready: "#6eefcb"
+  release: "#A5D8ff"
+  review: "#d876e3"
+  scope: "#27CF79"
+  status: "#F8F9FA"
+  team: "#FDF4E8"
+  testing: "#f7bfff"
+  wontfix: "#ffffff"
+labels: 
+  bug/0-needs-info: 
+    color: ~
+    description: "More information is needed for reproduction."
+    siblings: 
+      - kind/bug
+  bug/1-repro-available: 
+    color: ~
+    description: "A reproduction exists and needs to be confirmed."
+    siblings: 
+      - kind/bug
+  bug/2-confirmed: 
+    color: ~
+    description: "We have confirmed that this is a bug."
+    siblings: 
+      - kind/bug
+  kind/bug: 
+    alias: 
+      - bug
+    color: ~
+    description: "A reported bug."
+  kind/discussion: 
+    color: ~
+    description: "Discussion is required."
+  kind/docs: 
+    alias: 
+      - documentation
+    color: ~
+    description: "A documentation change is required."
+  kind/feature: 
+    alias: 
+      - enhancement
+    color: ~
+    description: "A request for a new feature."
+  kind/improvement: 
+    color: ~
+    description: "An improvement to existing feature and code."
+  kind/question: 
+    alias: 
+      - question
+    color: ~
+    description: "Developer asked a question. No code changes required."
+  kind/regression: 
+    color: ~
+    description: "A reported bug in functionality that used to work before."
+  scope/large: 
+    color: ~
+    description: "Engineering effort >2 person weeks"
+  scope/medium: 
+    color: ~
+    description: "Engineering effort ~2 person weeks"
+  scope/small: 
+    color: ~
+    description: "Engineering effort <=1 person week"
+repos: 
+  engineering: 
+    config: 
       removeUnconfiguredLabels: false
-    labels:
-      <<: *common
+    labels: 
+      bug/0-needs-info: 
+        color: ~
+        description: "More information is needed for reproduction."
+        siblings: 
+          - kind/bug
+      bug/1-repro-available: 
+        color: ~
+        description: "A reproduction exists and needs to be confirmed."
+        siblings: 
+          - kind/bug
+      bug/2-confirmed: 
+        color: ~
+        description: "We have confirmed that this is a bug."
+        siblings: 
+          - kind/bug
+      kind/bug: 
+        alias: 
+          - bug
+        color: ~
+        description: "A reported bug."
+      kind/discussion: 
+        color: ~
+        description: "Discussion is required."
+      kind/docs: 
+        alias: 
+          - documentation
+        color: ~
+        description: "A documentation change is required."
+      kind/feature: 
+        alias: 
+          - enhancement
+        color: ~
+        description: "A request for a new feature."
+      kind/improvement: 
+        color: ~
+        description: "An improvement to existing feature and code."
+      kind/question: 
+        alias: 
+          - question
+        color: ~
+        description: "Developer asked a question. No code changes required."
+      kind/regression: 
+        color: ~
+        description: "A reported bug in functionality that used to work before."
+      scope/large: 
+        color: ~
+        description: "Engineering effort >2 person weeks"
+      scope/medium: 
+        color: ~
+        description: "Engineering effort ~2 person weeks"
+      scope/small: 
+        color: ~
+        description: "Engineering effort <=1 person week"
